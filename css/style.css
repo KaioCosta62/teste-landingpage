@@ -76,4 +76,74 @@ span {
   font-size: 0.875em;
   color: var(--color-primary);
   transition: all 300ms ease-in;
+}
+
+.registration {
+  padding: 40px 0;
+}
+.registration .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+  gap: 60px;
+  max-width: 1100px;
+}
+.registration div h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+}
+.registration div p {
+  font-size: 12px;
+  color: var(--color-primary);
+}
+.registration div p + p {
+  margin-top: 30px;
+}
+.registration .registration-user {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration .registration-user label {
+  font-size: 12px;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 10px;
+}
+.registration .registration-user input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid var(--color-secondary);
+  padding-left: 10px;
+  outline: 0;
+}
+.registration .registration-user .check-sex {
+  display: flex;
+  gap: 40px;
+}
+.registration .registration-user .check-sex div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.registration .registration-user .check-sex div label {
+  margin-top: 10px;
+}
+.registration .registration-user .check-sex input {
+  width: 15px;
+}
+.registration .registration-user button {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-secondary);
+  height: 30px;
+  font-size: 1em;
+  color: var(--color-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.registration .registration-user button:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
 }/*# sourceMappingURL=style.css.map */

@@ -89,3 +89,92 @@ span{
   }
 }
 
+.registration{
+  padding: 40px 0;
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    gap: 60px;
+    max-width: 1100px;
+  }
+ 
+  div{
+
+    h2{
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    
+    p{
+      font-size: 12px;
+      color: var(--color-primary);
+    }
+
+    p + p{
+      margin-top: 30px;
+    }
+  }
+
+  .registration-user{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    label{
+      font-size: 12px;
+      color: var(--color-primary);
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input{
+      width: 100%;
+      height: 30px;
+      border: 1px solid var(--color-secondary);
+      padding-left: 10px;
+      outline: 0;
+    }
+
+    .check-sex{
+      display: flex;
+      gap: 40px;
+
+      div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        label{
+          margin-top: 10px;
+        }
+      }
+
+      input{
+        width: 15px;
+      }
+    }
+
+    button{
+      background-color: var(--color-white);
+      border: 1px solid var(--color-secondary);
+      height: 30px;
+      font-size: 1em;
+      color: var(--color-primary);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 300ms ease-in-out;
+
+      &:hover{
+        background-color: var(--color-secondary);
+        color: var(--color-white);
+      }
+
+    }
+  }
+
+
+}
