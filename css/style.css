@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+:root {
+  --color-primary: #888;
+  --color-secondary: #707070;
+  --color-white: #fff;
+}
+
+/* Estilos gerais */
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  display: block;
+}
+
+.header {
+  height: 350px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 71%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 71%);
+  background-color: var(--color-secondary);
+  text-align: center;
+  padding: 40px 0;
+  color: var(--color-white);
+}
+.header span {
+  font-size: 1.25em;
+}
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+}
+.header p {
+  font-size: 0.875em;
+}
+.header .nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 40px;
+}
+.header .nav ul li {
+  flex: 1 0 160px;
+  height: 40px;
+  line-height: 40px;
+  background-color: var(--color-white);
+  border-radius: 4px;
+  box-shadow: 2px 1px 6px #ccc;
+}
+.header .nav ul li:hover {
+  background-color: var(--color-secondary);
+}
+.header .nav ul li:hover a {
+  color: var(--color-white);
+  font-weight: bold;
+  font-size: 1em;
+}
+.header .nav ul a {
+  font-size: 0.875em;
+  color: var(--color-primary);
+  transition: all 300ms ease-in;
+}/*# sourceMappingURL=style.css.map */
