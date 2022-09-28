@@ -1,4 +1,4 @@
-let nextPage = 'https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1'
+let page = 'https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1'
 
 async function showProducts() {
   const productsWrapper = document.querySelector('.products .products-wrapper')
@@ -12,7 +12,7 @@ async function showProducts() {
   }
 
   function dadosApi(dados){
-    nextPage = dados.nextPage
+    page = dados.nextPage
     setTimeout(function(){
       spinner.style.display = 'none'
 
@@ -37,7 +37,7 @@ async function showProducts() {
     }, 800)
   }
 
-  await fetch(nextPage).then(response).then(dadosApi)
+  await fetch(page).then(response).then(dadosApi)
 
 }
 
@@ -85,7 +85,7 @@ function showMoreProducts(){
       }, 800)
     }
 
-    await fetch(`https://${nextPage}`).then(response).then(dadosApi)
+    await fetch(`https://${page}`).then(response).then(dadosApi)
 
   })
 }
