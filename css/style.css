@@ -14,7 +14,7 @@
 /* Estilos gerais */
 .container {
   width: 100%;
-  max-width: 980px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 2%;
 }
@@ -33,15 +33,26 @@ span {
 
 .header {
   height: 350px;
+  text-align: center;
+  color: var(--color-white);
+}
+.header .container {
+  max-width: 980px;
+}
+.header .bg {
+  width: 100%;
+  height: 350px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 71%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 71%);
   background-color: var(--color-secondary);
-  text-align: center;
-  padding: 40px 0;
-  color: var(--color-white);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 .header span {
   font-size: 1.25em;
+  margin-top: 30px;
 }
 .header h1 {
   font-size: 2.5em;
@@ -85,17 +96,17 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   gap: 60px;
-  max-width: 1100px;
 }
 .registration div h2 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 400;
   color: var(--color-primary);
   margin-bottom: 30px;
 }
 .registration div p {
-  font-size: 12px;
+  font-size: 0.75em;
   color: var(--color-primary);
+  line-height: 1.6;
 }
 .registration div p + p {
   margin-top: 30px;
@@ -106,7 +117,7 @@ span {
   gap: 20px;
 }
 .registration .registration-user label {
-  font-size: 12px;
+  font-size: 0.75em;
   color: var(--color-primary);
   display: block;
   margin-bottom: 10px;
