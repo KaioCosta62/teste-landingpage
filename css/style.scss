@@ -214,8 +214,7 @@ span{
       
       .image{
         width: 100%;
-        height: 150px;
-        border: 1px solid var(--color-secondary);
+        object-fit: cover;
       }
 
       h3{
@@ -257,6 +256,16 @@ span{
         outline: 0;
         cursor: pointer;
       }
+
+      .spinner{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid #ccc;
+        border-top: 5px solid green;
+        margin: 0 auto;
+        animation: spinner 1s infinite linear;
+      }
     }
 
     .more-products{
@@ -271,6 +280,12 @@ span{
       cursor: pointer;
     }
 
+  }
+}
+
+@keyframes spinner {
+  to{
+    transform: rotate(360deg);
   }
 }
 
@@ -289,6 +304,10 @@ span{
        
       .in{
         margin: 14px 0 6px 0;
+      }
+
+      .image{
+        max-width: 100%;
       }
 
     }
