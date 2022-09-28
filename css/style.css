@@ -231,6 +231,9 @@ span {
   -webkit-animation: spinner 1s infinite linear;
           animation: spinner 1s infinite linear;
 }
+.main .products .products-wrapper .spinner-more {
+  display: none;
+}
 .main .products .more-products {
   display: block;
   margin: 50px auto 0 auto;
