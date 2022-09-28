@@ -337,16 +337,21 @@ span{
       border-radius: 8px;
       border: 1px solid var(--color-primary);
     }
-  }
 
-  button{
-    width: 260px;
-    height: 40px;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-primary);
-    font-size: 1.125em;
-    cursor: pointer;
-    margin-top: 40px;
+    .button-newsleeter{
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+
+    button{
+      width: 260px;
+      height: 40px;
+      background-color: var(--color-white);
+      border: 1px solid var(--color-primary);
+      font-size: 1.125em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
   }
 }
 
@@ -373,6 +378,17 @@ span{
 @keyframes spinner {
   to{
     transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 720px){
+  .newsletter{
+    .newsletter-form{
+      grid-template-columns: 1fr;
+      input{
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -405,14 +421,5 @@ span{
       gap: 20px;
     }
 
-  }
-
-  .newsletter{
-    .newsletter-form{
-      grid-template-columns: 1fr;
-      input{
-        width: 100%;
-      }
-    }
   }
 }
