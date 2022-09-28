@@ -22,18 +22,17 @@ async function showProducts() {
           <p>
             ${response.products[i].description}
           </p>
-          <span class="in">De: ${response.products[i].oldPrice},00</span>
-          <span class="per">Por: ${response.products[i].price},00</span>
-          <span class="split-price">ou ${response.products[i].installments.count}x de ${response.products[i].installments.value}</span>
+          <span class="in">De: R$${response.products[i].oldPrice},00</span>
+          <span class="per">Por: R$${response.products[i].price},00</span>
+          <span class="split-price">ou ${response.products[i].installments.count}x de R$${response.products[i].installments.value}</span>
           <button>Comprar</button>
         </div>
       </div>
       `
       productsWrapper.innerHTML += htmlProducts
       }
-    }, 400)
+    }, 800)
 
-    console.log(response.products)
   }
 
   await fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1').then(response).then(dadosApi)
