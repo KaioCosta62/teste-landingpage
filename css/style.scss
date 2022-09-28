@@ -297,6 +297,60 @@ span{
   }
 }
 
+
+/* Section newsletter */
+
+.newsletter{
+  padding: 40px 0;
+  text-align: center;
+
+  h2{
+    font-size: 1.125em;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+  
+  p{
+    font-size: 0.875em;
+    color: var(--color-primary);
+  }
+
+  .newsletter-form{
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+
+    label{
+      display: block;
+      font-size: 0.75em;
+      color: var(--color-primary);
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    input{
+      width: 100%;
+      height: 30px;
+      outline: 0;
+      padding-left: 10px;
+      border-radius: 8px;
+      border: 1px solid var(--color-primary);
+    }
+  }
+
+  button{
+    width: 260px;
+    height: 40px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    font-size: 1.125em;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+}
+
 @keyframes spinner {
   to{
     transform: rotate(360deg);
@@ -333,4 +387,13 @@ span{
     }
 
   }
+
+  .newsletter{
+    .newsletter-form{
+      grid-template-columns: 1fr;
+      input{
+        width: 100%;
+      }
+    }
   }
+}

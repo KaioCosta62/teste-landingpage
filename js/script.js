@@ -49,6 +49,7 @@ function showMoreProducts(){
   let htmlProducts;
   btnProductsMore.addEventListener('click', async function(){
 
+    btnProductsMore.style.display = 'none'
     spinner.style.display = 'block'
 
     function response(response){
@@ -77,8 +78,6 @@ function showMoreProducts(){
             </div>
           </div>
           `
-
-          btnProductsMore.style.display = 'none'
           moreProducts.innerHTML += htmlProducts
         }
 
