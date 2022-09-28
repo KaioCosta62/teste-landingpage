@@ -1,3 +1,5 @@
+let nextPage = 'https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1'
+
 async function showProducts() {
   const productsWrapper = document.querySelector('.products .products-wrapper')
   const spinner = document.querySelector('.spinner')
@@ -10,6 +12,7 @@ async function showProducts() {
   }
 
   function dadosApi(dados){
+    nextPage = dados.nextPage
     setTimeout(function(){
       spinner.style.display = 'none'
 
@@ -34,7 +37,7 @@ async function showProducts() {
     }, 800)
   }
 
-  await fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1').then(response).then(dadosApi)
+  await fetch(nextPage).then(response).then(dadosApi)
 
 }
 
@@ -54,7 +57,8 @@ function showMoreProducts(){
 
     function dadosApi(dados){
 
-      setTimeout(function(){
+
+    setTimeout(function(){
         spinner.style.display = 'none'
 
         for(let i = 0; i <= dados.products.length; i++){
@@ -73,7 +77,7 @@ function showMoreProducts(){
             </div>
           </div>
           `
-          
+
           btnProductsMore.style.display = 'none'
           moreProducts.innerHTML += htmlProducts
         }
@@ -81,7 +85,7 @@ function showMoreProducts(){
       }, 800)
     }
 
-    await fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=2').then(response).then(dadosApi)
+    await fetch(`https://${nextPage}`).then(response).then(dadosApi)
 
   })
 }
