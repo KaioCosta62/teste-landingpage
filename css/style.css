@@ -336,16 +336,15 @@ span {
 }
 
 .scroll {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #ff0000;
   position: fixed;
   right: 40px;
   bottom: 20px;
   z-index: 1;
   display: none;
   cursor: pointer;
+  font-size: 1.5em;
+  -webkit-animation: scrollTop 500ms ease-in infinite alternate;
+          animation: scrollTop 500ms ease-in infinite alternate;
 }
 
 @-webkit-keyframes spinner {
@@ -357,6 +356,22 @@ span {
 @keyframes spinner {
   to {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes scrollTop {
+  from {
+    font-size: 1.5em;
+  }
+  to {
+    font-size: 2em;
+  }
+}
+@keyframes scrollTop {
+  from {
+    font-size: 1.5em;
+  }
+  to {
+    font-size: 2em;
   }
 }
 @media (max-width: 720px) {

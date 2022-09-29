@@ -400,20 +400,29 @@ span{
 }
 
 .scroll{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #ff0000;
   position: fixed;
   right: 40px;
   bottom: 20px;
   z-index: 1;
   display: none;
   cursor: pointer;
+  font-size: 1.5em;
+  animation: scrollTop 500ms ease-in infinite alternate ;
 }
+
 @keyframes spinner {
   to{
     transform: rotate(360deg);
+  }
+}
+
+@keyframes scrollTop {
+  from{
+    font-size: 1.5em;
+  }
+
+  to{
+    font-size: 2em;
   }
 }
 
