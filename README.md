@@ -14,7 +14,7 @@ Landing Page criada com base em uma vaga Front-End para desenvolvedor júnior
 
 ## Funcionalidades
 
-- Função que permite retornar ao topo
+- Função que permite retornar ao topo da página
 - Carregamento de produtos via API
 - Requisição feita após clicar em um button
 - Validação de formulários
