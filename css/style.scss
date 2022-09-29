@@ -154,6 +154,10 @@ span{
       border-radius: 8px;
     }
 
+    input.error-input{
+      border: 1px solid #ff0000;
+    }
+
     .check-sex{
       display: flex;
       gap: 40px;
@@ -166,11 +170,12 @@ span{
         label{
           margin-top: 10px;
         }
+        
       }
-
       input{
         width: 15px;
       }
+
     }
 
     button{
@@ -188,6 +193,12 @@ span{
         color: var(--color-white);
       }
 
+    }
+
+    .error,
+    .error-check{
+      color: red;
+      font-size: 0.8em;
     }
   }
 

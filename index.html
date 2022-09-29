@@ -50,20 +50,23 @@
         </p>
       </div>
 
-      <form action="" method="get" class="registration-user">
+      <form action="dados.html" method="GET" class="registration-user" id="registration-user">
         <div>
           <label for="name">Seu nome:</label>
-          <input type="text" name="" id="name">
+          <input type="text" name="input-name" id="name">
+          <span class="error"></span>
         </div>
 
         <div>
           <label for="email">E-mail:</label>
-          <input type="text" name="" id="email">
+          <input type="text" name="input-email" id="email">
+          <span class="error"></span>
         </div>
 
         <div>
           <label for="cpf">CPF:</label>
-          <input type="text" name="" id="cpf">
+          <input type="text" name="input-cpf" id="cpf" >
+          <span class="error"></span>
         </div>
 
         <div class="check-sex">
@@ -76,7 +79,6 @@
             <label for="feminine">Feminino</label>
           </div>
         </div>
-
         <button type="submit">Enviar</button>
       </form>
     </div>
