@@ -208,7 +208,28 @@ function verifyNewsletter(){
   })
 }
 
+function backToTop(){
+  const scroll = document.querySelector('.scroll')
+
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 0){
+      scroll.style.display = 'block'
+    }else{
+      scroll.style.display = 'none'
+    }
+  })
+
+  scroll.addEventListener('click', function(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  })
+
+}
+
 showProducts()
 showMoreProducts()
 verifyForm()
 verifyNewsletter()
+backToTop()

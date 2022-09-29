@@ -341,8 +341,11 @@ span {
   border-radius: 50%;
   border: 1px solid #ff0000;
   position: fixed;
-  right: 0;
-  bottom: 0;
+  right: 40px;
+  bottom: 20px;
+  z-index: 1;
+  display: none;
+  cursor: pointer;
 }
 
 @-webkit-keyframes spinner {
