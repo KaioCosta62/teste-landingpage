@@ -164,6 +164,51 @@ function verifyForm(){
   })
 }
 
+function verifyNewsletter(){
+  let form = document.querySelector('#newsletter-form')
+  let verifyErrorForm = false
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault()
+
+    const inputName = document.forms['newsletter-form']['input-name-friend']
+    const regexName = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/
+    const verifyName = regexName.test(inputName.value)
+
+    if(!verifyName){
+      verifyErrorForm = true
+      inputName.classList.add('error-input')
+      let span = inputName.nextElementSibling
+      span.innerHTML = 'Insira um nome válido'
+    }else{
+      inputName.classList.remove('error-input')
+      let span = inputName.nextElementSibling
+      span.innerHTML = ''
+    }
+
+
+    const inputEmail = document.forms['newsletter-form']['input-email-friend']
+    const regexEmail = /\S+@\S+\.\S+/
+    const verifyEmail = regexEmail.test(inputEmail.value)
+
+    if(!verifyEmail){
+      verifyErrorForm = true
+      inputEmail.classList.add('error-input')
+      let span = inputEmail.nextElementSibling
+      span.innerHTML = 'Insira um e-mail válido'
+    }else{
+      inputEmail.classList.remove('error-input')
+      let span = inputEmail.nextElementSibling
+      span.innerHTML = ''
+    }
+
+    if(!verifyErrorForm){
+      form.submit()
+    }
+  })
+}
+
 showProducts()
 showMoreProducts()
 verifyForm()
+verifyNewsletter()
