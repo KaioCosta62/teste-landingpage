@@ -41,6 +41,10 @@ span{
   font-size: 0.8em;
 }
 
+button{
+  border-radius: 8px;
+}
+
 /* HEADER */
 .header{
   height: 350px;
@@ -190,7 +194,6 @@ span{
       height: 30px;
       font-size: 1em;
       color: var(--color-primary);
-      border-radius: 8px;
       cursor: pointer;
       transition: 300ms ease-in-out;
 
@@ -274,7 +277,6 @@ span{
         outline: 0;
         cursor: pointer;
         transition: all 300ms ease-in;
-        border-radius: 8px;
 
         &:hover{
           background-color: var(--color-primary);
