@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
+  
 }
 
 :root{
@@ -33,6 +34,12 @@ span{
   display: block;
 }
 
+
+
+.error{
+  color: red;
+  font-size: 0.8em;
+}
 
 /* HEADER */
 .header{
@@ -152,10 +159,9 @@ span{
       padding-left: 10px;
       outline: 0;
       border-radius: 8px;
-    }
-
-    input.error-input{
-      border: 1px solid #ff0000;
+      &.error-input{
+        border: 1px solid #ff0000;
+      }
     }
 
     .check-sex{
@@ -170,7 +176,7 @@ span{
         label{
           margin-top: 10px;
         }
-        
+
       }
       input{
         width: 15px;
@@ -347,6 +353,9 @@ span{
       padding-left: 10px;
       border-radius: 8px;
       border: 1px solid var(--color-primary);
+      &.error-input{
+        border: 1px solid #ff0000;
+      }
     }
 
     .button-newsleeter{
@@ -362,6 +371,10 @@ span{
       font-size: 1.125em;
       cursor: pointer;
       margin-top: 20px;
+    }
+
+    .error{
+      text-align: left;
     }
   }
 }
