@@ -5,6 +5,7 @@ Landing Page criada com base em uma vaga Front-End para desenvolvedor júnior
 ## Referência
 
  - [Link do Desafio](https://github.com/thiagocontaparatestes/testes-vaga-emprego/blob/main/teste-html-css-js.md)
+ - [Live Preview](https://kaiocosta62.github.io/teste-juroscompostos/)
  
 
 ## Autores
